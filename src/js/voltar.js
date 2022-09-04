@@ -1,10 +1,3 @@
-import '../scss/styles.scss'
-
-var myCarousel = document.querySelector('#carouselId')
-var carousel = new bootstrap.Carousel(myCarousel, {
-    interval: 1000
-})
-
 // pegar botão
 var mybutton = document.getElementById("myBtn");
 
@@ -21,6 +14,6 @@ function scrollFunction() {
 
 // // quando clicar no botão, a página rola para o topo do documento
 function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }

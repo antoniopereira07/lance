@@ -4,118 +4,353 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-    <title>Lance Negócios</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Alexsany Burguers</title>
 </head>
 <body>
+
+   <!-- <div class="grid">
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+        <div class="col-1">
+            <div class="bg-red"></div>
+        </div>
+    </div> -->
+    
+
     <div id="root">
         <header>
             <div class="container">
-                <h2 class="logo">
-                    <img src="./assets/images/logo-lance.png" alt="Lance Negócios">
+                <h2 class="logo col-1">
+                    <img src="./assets/images/burguer-logo.png" alt="Burguers">
                 </h2>
-                <nav class="nav">
+
+                <nav class="nav col-4">
                     <a class="nav__item" href="#sobre">Sobre</a>
                     <a class="nav__item" href="#produtos">Produtos</a>
                     <a class="nav__item" href="#como-funciona">Como funciona</a>
-                </nav>
-                <div class="hero">
-                    <h1>Veja como acelerar a criação do seu negócio</h1>
+                </nav>      
+
+
+                <section>
+                    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">  
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="img-fluid">
+                                <div class="carousel-item active">
+                                    <img src="./assets/images/burguer-aperetivo-0-600x450.jpg" class="d-block w-100 img-fluid" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/burguer-aperetivo-1-600x450.jpg" class="d-block w-100 img-fluid"  alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/images/burguer-aperetivo-2-600x450.jpg" class="d-block w-100 img-fluid"  alt="Third slide">
+                                </div>                
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>       
+                    </div>      
+                </section>
+
+                <div class="hero col-12">
+                
                 </div>
             </div>
         </header>
+
         <section id="sobre">
             <div class="container">
-                <article>
+                <article class="col-12">
                     <h1>Sobre nós</h1>
-                    <p>Somos uma equipe especializada na criação visual de marcas, trabalhamos com as principais ferramentas profissionais do mercado para você iniciar um negócio rapidamente.</p>
-                    <p>Veja como funciona nosso processo e nossos produtos disponíveis para nos contratar. E veja a mágica que faremos em poucos dias de trabalho, para você lançar seu negócio em alto estilo.</p>
+                    <p>Alexsany hamburguer tem o compromisso com todos os nossos clientes e parceiros, trabalhamos para oferecer o melhor. São anos de respeito e reconhecimento, tudo isso graças a fidelidade de cada consumidor que contribuem para essa realidade. </p>
+                    <p>Temos a melhor opção de hamburgueres para cada gosto, para momentos especias e inesquecíveis.</p>
                 </article>
             </div>
         </section>
+
         <section id="produtos">
             <div class="container">
-                <article>
-                    <h1>Catálogo</h1>
+                <article class="col-12">
+
+                    <h1>Cardápio</h1>
+
                     <div class="vitrine">
-                        <div class="vitrine__item">
-                            <div class="vitrine__image">
-                                <img src="./assets/images/produto-logo.png" alt="Criação de Logo">
-                            </div>
-                            <h3 class="vitrine__title">Logo</h3>
-                            <p class="vitrine__desc">Design profissional de logos para você começar</p>
-                            <a href="#produto-logo" class="vitrine__button">Tenho interresse</a>
+
+                        <div class="card">
+                            <div class="vitrine__item col-12">
+                                <div class="vitrine__image">
+                                    <img src="./assets/images/hamburguer.png" alt="HOUSTON" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="vitrine__title card-title">HOUSTON</h3>
+                                    <p class="vitrine__desc card-text">Pão, verduras, carne artesanal, mussarela, presunto, bacon</p>
+                                    <p><strong>R$ 25,00</strong></p>
+                                    <a href="#produto-logo" class="vitrine__button" data-bs-toggle="modal" data-bs-target="#modal-1">Solicitar</a>
+                                </div>                           
+                            </div>   
                         </div>
-                        <div class="vitrine__item">
-                            <div class="vitrine__image">
-                                <img src="./assets/images/produto-timbrado.png" alt="Papel Timbrado">
+
+                        <div class="card">
+                            <div class="vitrine__item col-12">
+                                <div class="vitrine__image">
+                                    <img src="./assets/images/hamburguer-1.png" alt="Smach Gourmet" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="vitrine__title card-title">Smach Gourmet</h3>
+                                    <p class="vitrine__desc card-text">Pão, 3 carnes de 150g, queijjo cheddar, alface, tomate e molho.</p>
+                                    <p><strong>R$ 45,00</strong></p>
+                                    <a href="#produto-timbrado" class="vitrine__button" data-bs-toggle="modal" data-bs-target="#modal-2">Solicitar</a>
+                                </div>
                             </div>
-                            <h3 class="vitrine__title">Papel Timbrado</h3>
-                            <p class="vitrine__desc">
-                                Aplicação de identidade visual a seus documentos do dia a dia.
-                            </p>
-                            <a href="#produto-timbrado" class="vitrine__button">Tenho interesse</a>
                         </div>
-                        <div class="vitrine__item">
-                            <div class="vitrine__image">
-                                <img src="./assets/images/produto-cartao.png" alt="Cartão de visita">
+                        <div class="card">
+                            <div class="vitrine__item col-12">
+                                <div class="vitrine__image">
+                                    <img src="./assets/images/hamburguer-3.png" alt="Americano" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="vitrine__title card-title">Americano</h3>
+                                    <p class="vitrine__desc card-text">Pão, carne, queijo cheddar, bacon, tomate, alface, molho.</p>
+                                    <p><strong>R$ 35,00</strong></p>
+                                    <a href="#produto-cartao" class="vitrine__button" data-bs-toggle="modal" data-bs-target="#modal-3">Solicitar</a>
+                                </div>
                             </div>
-                            <h3 class="vitrine__title">Cartão de visita</h3>
-                            <p class="vitrine__desc">
-                                Layout do seu cartão de visita com aquele toque profissional.   
-                            </p>
-                            <a href="#produto-cartao" class="vitrine__button">Tenho interesse</a>
                         </div>
-                        <div class="vitrine__item">
-                            <div class="vitrine__image">
-                                <img src="./assets/images/produto-site.png" alt="Site institucional">
+
+                        <div class="card">
+                            <div class="vitrine__item col-12">
+                                <div class="vitrine__image">
+                                    <img src="./assets/images/hamburguer-com-batatas.png" alt="Burguer Artesanal" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="vitrine__title card-title">Burguer Artesanal</h3>
+                                    <p class="vitrine__desc card-text">
+                                      Pão, carne, bacon, mussarela, alface, tomate, batata 100g.
+                                    </p>
+                                    <p><strong>R$ 40,00</strong></p>
+                                    <a href="#produto-site" class="vitrine__button" data-bs-toggle="modal" data-bs-target="#modal-4">Solicitar</a>
+                                </div>
                             </div>
-                            <h3 class="vitrine__title">Site institucional</h3>
-                            <p class="vitrine__desc">
-                                Desenvolvimento de site com a sua identidade visual aplicada.
-                            </p>
-                            <a href="#produto-site" class="vitrine__button">Tenho interesse</a>
                         </div>
                     </div>
+
                 </article>
             </div>
         </section>
 
         <section id="como-funciona">
             <div class="container">
-                <article>
+                <article class="col-12">
                     <h1>Como funciona</h1>
                     <div class="steps">
-                        <div class="steps__item">
-                            <img src="./assets/images/escolha.png" alt="Escolha seu lance">
-                            <h3>Escolha seu lance</h3>
+                        <div class="steps__item col-5 ">
+                            <img src="./assets/images/escolha.png" alt="Escolha seu pedido">
+                            <h3>Escolha seu pedido</h3>
                         </div>
-                        <div class="steps__item">
-                            <img src="./assets/images/lance.png" alt="Pague o item escolhido">
-                            <h3>Lance seu pagamento</h3>
+                        <div class="steps__item col-5 ">
+                            <img src="./assets/images/lance.png" alt="Aceitamos cartões">
+                            <h3>Aceitamos cartões</h3>
                         </div>
-                        <div class="steps__item">
-                            <img src="./assets/images/trabalhamos.png" alt="Trabalhamos">
-                            <h3>Após a confirmação do pagamento, iniciamos os trabalhos.</h3>
+                        <div class="steps__item col-5 ">
+                            <img src="./assets/images/trabalhamos.png" alt="Temos também sucos e refrigerantes">
+                            <h3>Temos também sucos e refrigerantes.</h3>
                         </div>
-                        <div class="steps__item">
-                            <img src="./assets/images/voce-aprova.png" alt="Você aprova">
-                            <h3>Em poucos dias você recebará o trabalho pronto para avaliar.</h3>
+                        <div class="steps__item col-5 ">
+                            <img src="./assets/images/voce-aprova.png" alt="Após confirmado, preparamos seu pedido">
+                            <h3>Após confirmado, preparamos seu pedido.</h3>
                         </div>
-                        <div class="steps__item">
-                            <img src="./assets/images/lancamos.png" alt="Lance seu negócio">
-                            <h3>Se estiver tudo ok para você, você lança seu negócio <span>=)</span></h3>
+                        <div class="steps__item col-5 ">
+                            <img src="./assets/images/lancamos.png" alt="Se estiver tudo ok, nós enviaremos seu pedido">
+                            <h3>Se estiver tudo ok, nós enviaremos seu pedido <span>=)</span></h3>
                         </div>
                     </div>
                 </article>
             </div>
         </section>
+
+        <div class="modal fade" id="modal-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Hamburguer</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6><strong>Confirme seu pedido</strong></h6>
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HOUSTON</td>
+                                    <td>R$ 25,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-lg btn btn-primary" data-bs-dismiss="modal">Confirmar</button>
+                        <button type="button" class="btn btn-lg btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Hamburguer</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6><strong>Confirme seu pedido</strong></h6>
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Smach Gourmet</td>
+                                    <td>R$ 45,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-lg btn btn-primary" data-bs-dismiss="modal">Confirmar</button>
+                        <button type="button" class="btn btn-lg btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Hamburguer</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6><strong>Confirme seu pedido</strong></h6>
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Americano</td>
+                                    <td>R$ 35,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-lg btn btn-primary" data-bs-dismiss="modal">Confirmar</button>
+                        <button type="button" class="btn btn-lg btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-4">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Hamburguer</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6><strong>Confirme seu pedido</strong></h6>
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Burguer Artesanal</td>
+                                    <td>R$ 40,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-lg btn btn-primary" data-bs-dismiss="modal">Confirmar</button>
+                        <button type="button" class="btn btn-lg btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Topo</button>
+
         <footer>
             <div class="container">
-                <p>&copy; Todos os direitos reservados. <br>
+                <p class="col-12">&copy; Todos os direitos reservados. <br>
                 <small>Desenvolvido por <a href="https://github.com/antoniopereira07">Antonio</a>.</small></p>
             </div>
         </footer>
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+    <script src="./js/voltar.js"></script>
 </body>
 </html>
